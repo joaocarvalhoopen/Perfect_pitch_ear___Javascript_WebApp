@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Perfect Pitch Ear">
+        <title>Perfect Pitch Ear</title>
+        <link rel="stylesheet" type="text/css" href="./perfectPitchEar.css">
+        <script src="./keithwhor-audiosynth/audiosynth.js"></script>
+        <script src="./perfectPitchEar.js"></script>
+    </head>
+    <body style="background-color:beige;" onload="init();" >
+        <div style="text-align: center;" >
+            <h1>Perfect Pitch Ear</h1>          
+            <br>
+
+            <!-- <div style="margin: auto; position: relative; width:192px; height:169px; background-color:blue;"> -->
+            <div style="margin: auto; position: relative; width:192px; height:169px; ">
+                <div class="staff" style="position: absolute; display: block; left: 0px; top: 20px;" >
+                     <img src="./img/Staff96.svg" alt="Staff96" width="192" height="50"> 
+                </div>
+                <div class="staff" style="position: absolute; display: block; left: 0px; top: 92px;" >
+                    <img src="./img/Staff96.svg" alt="Staff96" width="192" height="50"> 
+               </div>
+                <div style="position: absolute; display: block; left: 4px; top: 2px; ">
+                    <img src="./img/GClef.svg" alt="GClef" width="30.372"height="81.536">
+                </div>
+                <div style="position: absolute; display: block; left: 4px; top: 93px; ">
+                    <img src="./img/FClef.svg" alt="FClef" width="36" height="40">
+                </div>
+                <div style="position: absolute; display: block; left: 84px; top: -4px; ">
+                    <img src="./img/AddedLine15.svg" alt="AddedLine15" width="36"height="2">
+                </div>
+                <div style="position: absolute; display: block; left: 84px; top: 68px; ">
+                    <img src="./img/AddedLine15.svg" alt="AddedLine15" width="36"height="2">
+                </div>
+                <div style="position: absolute; display: block; left: 84px; top: 140px; ">
+                    <img src="./img/AddedLine15.svg" alt="AddedLine15" width="36"height="2">
+                </div>
+
+
+                <div id="divNote" class="note" style="visibility: hidden; position: absolute; display: block; left: 88px; top: 50px; ">
+                    <img src="./img/WholeNote.svg" alt="GClef" width="24" height="14">
+                </div>
+
+                <!--
+
+                    div top position:
+                
+                    -5    B   B5
+                    1     A   A5
+                    8     G   G5
+                    14    F   F5
+                    20    E   E5
+                    26    D   D5
+                    31    C   C5
+                    38    B   B4
+                    43    A   A4
+                    50    G   G4 - Sol
+                    55    F   F4
+                    61    E   E4
+                    67    D   D4
+                    74    C   C4
+                    80    B   B3
+                    86    A   A3
+                    92    G   G3
+                    98    F   F3 - Fa   
+                    104   E   E3
+                    110   D   D3
+                    116   C   C3
+                    122   B   B2
+                    128   A   A2
+                    134   G   G2
+                    140   F   F2
+                    146   E   E2
+                    152   D   D2
+
+                -->
+            
+            </div>
+
+            <div style="position: relative; display: block; left: 0px; top: 20px;">
+                <button class="noteButton" onclick="clickOnButton('C');" disabled>C<br><br>Do</button>
+                <button class="noteButton" onclick="clickOnButton('D');" disabled>D<br><br>Re</button>
+                <button class="noteButton" onclick="clickOnButton('E');" disabled>E<br><br>Mi</button>
+                <button class="noteButton" onclick="clickOnButton('F');" disabled>F<br><br>Fa</button>
+                <button class="noteButton" onclick="clickOnButton('G');" disabled>G<br><br>Sol</button>
+                <button class="noteButton" onclick="clickOnButton('A');" disabled>A<br><br>La</button>
+                <button class="noteButton" onclick="clickOnButton('B');" disabled>B<br><br>Si</button>
+            </div>
+
+            <div style="position: relative; display: block; left: 0px; top: 20px;">
+                <h2 class="resultText" id="resultText"> </h2>
+            </div>
+
+            <div style="position: relative; display: block; left: 0px; top: 20px;">
+                <button class="startButton" onclick="startButton();"> Start </button>
+            </div>
+
+        </div>
+
+    </body>
+</html>

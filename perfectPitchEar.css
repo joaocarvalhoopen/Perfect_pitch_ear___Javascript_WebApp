@@ -1,0 +1,22 @@
+.staff {
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 10px;
+}
+
+.noteButton {
+    width: 40px;
+    height: 60px;
+    margin: 5px;
+}
+
+.resultText {
+    color: blue;
+}
+
+.startButton  {
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+}
