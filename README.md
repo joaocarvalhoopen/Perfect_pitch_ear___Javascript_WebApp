@@ -7,7 +7,7 @@ This is a simple webApp written in Javascript to run inside a browsers web page 
 The principal technique used in this App is the fact that you can stack div’s tag’s containing image objects inside them. An outer boundary div is created and then inner div’s with absolute position inside them are stacked.
 The images are all SVG’s (Scaled Vector Graphics)..   
 
-## Screen shoot image 
+## Screen shoot image
 ![Perfect pitch ear screen shoot image](./perfectPitchEar.png)
 
 ## Music score SVG images
